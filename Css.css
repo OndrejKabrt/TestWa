@@ -8,10 +8,28 @@
     padding: 1em;
   }
   
-  .wrapper {
+  .wrapper1 {
     display: grid;
+    
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 2fr 1fr ;
+    grid-template-rows: 60px 1fr 2fr 1fr ;
+    background-color: bisque;
+    gap: 1px;
+  }
+  .wrapper2 {
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 60px 1fr 2fr 1fr ;
+    background-color: red;
+    gap: 1px;
+  }
+  .wrapper3 {
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 60px 1fr 2fr 1fr ;
+    background-color: aliceblue;
     gap: 1px;
   }
   
@@ -20,6 +38,7 @@
     background-color: orange;
     grid-column: 1/5;
     grid-row:1;
+    align-items: center;
   }
   
   .main {
@@ -27,6 +46,7 @@
     font-size: 18px;
     grid-column: 1/5;
     grid-row: 2/4;
+
   }
   
   .footer{
@@ -38,17 +58,21 @@
   .headerBox1{
     background-color: chocolate;
     float: left;
-    padding: 5px;
+    padding: 15px;
+    
   }
   .headerBox2{
     background-color: darkviolet;
-    float: right;
-    padding: 5px;
+    float:right;
+    padding: 15px;
+
   }
   .headerBox3{
     background-color: aqua;
     float: right;
   }
+
+
   
   html, body {
     margin: 0;
