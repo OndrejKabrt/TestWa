@@ -1,0 +1,177 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .wrapper > div {
+
+    padding: 1em;
+  }
+  
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr ;
+    gap: 1px;
+  }
+  
+  .header {
+    font-size: 30px;
+    background-color: orange;
+    grid-column: 1/5;
+    grid-row:1;
+  }
+  
+  .main {
+    background-color:skyblue;
+    font-size: 18px;
+    grid-column: 1/5;
+    grid-row: 2/4;
+  }
+  
+  .footer{
+    background-color:seagreen;
+    grid-column: 1/5;
+    grid-row: 4/6;
+  }
+
+  .headerBox1{
+    background-color: chocolate;
+    float: left;
+    padding: 5px;
+  }
+  .headerBox2{
+    background-color: darkviolet;
+    float: right;
+    padding: 5px;
+  }
+  .headerBox3{
+    background-color: aqua;
+    float: right;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    font-size: 12px;
+    background-color:white;
+    
+  }
+
+  body {
+    width: 100%;
+    background-color: #adc273;
+    margin: 0 auto;
+  }
+
+    h1, h2, h3 {
+        font-family: 'Georgia', cursive;
+        color: #2a2a2a;
+    }
+
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+        color:rgb(0, 0, 0);
+        text-shadow: 2px 2px 10px rgb(196, 0, 0);
+      }
+      
+      h2 {
+        font-size: 3rem;
+        text-align: center;
+      }
+      
+      h3 {
+        font-size: 2.2rem;
+      }
+
+    p, input, li {
+     font-family: 'Georgia', sans-serif;
+      color: #2a2a2a;
+    }
+
+  p, li {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+
+  nav, article, aside, footer {
+    background-color: #9b8e51;
+    padding: 1%;
+  }
+
+  nav {
+    height: 50px;
+    background-color: #b3a036;
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    padding: 0;
+    list-style-type: none;
+    flex: 2;
+    display: flex;
+  }
+  nav li {
+    display: inline;
+    text-align: center;
+    flex: 1;
+  }
+  nav a {
+    display: inline-block;
+    font-size: 2rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: black;
+  }
+  nav form {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 2em;
+  }
+  input {
+    font-size: 1.6rem;
+    height: 32px;
+  }
+  
+  input[type="search"] {
+    flex: 3;
+  }
+  
+  input[type="submit"] {
+    flex: 1;
+    margin-left: 1rem;
+    background: #333;
+    border: 0;
+    color: white;
+  }
+
+  main {
+    display: flex;
+  }
+  
+  article {
+    flex: 4;
+  }
+
+aside {
+    flex: 1;
+    margin-left: 0pt;
+    background-color: #b3a036;
+  }
+
+  aside li {
+    padding-bottom: 10px;
+  }
+  
+  footer {
+    margin-top: 10px;
+  }
+
+  
